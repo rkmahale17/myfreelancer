@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+
+    <div *ngFor="let menu of TooolBarMenu" class="menu"> 
+        <button mat-stroked-button color="primary" (click)="goToPage(menu.path)">    
+            {{menu.name }}
+        </button>
+
+    </div>
+
+</mat-toolbar>

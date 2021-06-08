@@ -1,0 +1,15 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .menu{
+      padding: 10px;
+      button{
+          outline: none;
+          padding: 10px;
+          background: black;
+          font-size: 12px;
+          color: white;
+          font-weight: 600;
+      }
+  }

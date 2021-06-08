@@ -1,0 +1,29 @@
+
+<app-person-detail [person]="personSelected">
+
+</app-person-detail>
+
+<div style=" display: flex;">
+    <div *ngFor="let person of freelancer" >
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>{{person.name}}</mat-card-title>
+              <mat-card-subtitle>{{person.skill}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                {{person.name + ' is educated in ' + person.eduction}}
+              </p>
+              <p >
+                No of Project <b class="projects">{{person.numberOfProjects}}</b>
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button primary (click)="showDetails(person)">Details</button>
+            
+            </mat-card-actions>
+          </mat-card>
+    </div>
+</div>
